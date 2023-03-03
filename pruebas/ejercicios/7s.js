@@ -168,49 +168,49 @@
 // tipo de pan, y por último deberá verificar qué adicionales se seleccionaron.
 // Finalmente, deberá retornar el valor numérico del total a pagar del cliente.
 
-let sandwich = ''
-let precio = 0
-let tipoPan = ''
-let ingredientes = ''
+// let sandwich = ''
+// let precio = 0
+// let tipoPan = ''
+// let ingredientes = ''
 
-function pedido (sandwich, tipoPan, ingredientes){
+// function pedido (sandwich, tipoPan, ingredientes){
 
-if (sandwich = 'pollo'){
-    precio = 150
-}
-else if (sandwich = 'carne'){
-    precio = 200
-}
-else if (sandwich = 'veggie'){
-    precio = 100
-}
-if (tipoPan = 'blanco'){
-    precio = precio + 50
-}
-else if (tipoPan = 'negro'){
-    precio = precio + 60
-}
-else if (tipoPan = 'sGluten'){
-    precio = precio + 75
-}
-switch (ingredientes){
-    case 'queso':
-        precio = precio + 20;
-    case 'tomate':
-        precio = precio + 15;
-    case 'lechuga':
-        precio = precio + 10;
-    case 'cebolla':
-        precio = precio + 15;
-    case 'mayonesa':
-        precio = precio + 5;
-    case 'mostaza':
-        precio = precio + 5;
-    break;
-    default:
-        console.log('el ingrediente ingresado, no existe')
+// if (sandwich = 'pollo'){
+//     precio = 150
+// }
+// if (sandwich = 'carne'){
+//     precio = 200
+// }
+// if (sandwich = 'veggie'){
+//     precio = 100
+// }
+// if (tipoPan = 'blanco'){
+//     precio = precio + 50
+// }
+// if (tipoPan = 'negro'){
+//     precio = precio + 60
+// }
+// if (tipoPan = 'sGluten'){
+//     precio = precio + 75
+// }
+// switch (ingredientes){
+//     case 'queso':
+//         precio = precio + 20;
+//     case 'tomate':
+//         precio = precio + 15;
+//     case 'lechuga':
+//         precio = precio + 10;
+//     case 'cebolla':
+//         precio = precio + 15;
+//     case 'mayonesa':
+//         precio = precio + 5;
+//     case 'mostaza':
+//         precio = precio + 5;
+//     break;
+//     default:
+//         console.log('el ingrediente ingresado, no existe')
     
-}
-return precio
-}
-console.log(pedido('pollo', 'blanco', 'queso'))
+// }
+// return precio
+// }
+// console.log(pedido('pollo', 'blanco', 'queso'))
