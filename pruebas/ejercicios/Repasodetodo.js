@@ -14,6 +14,7 @@
 
 // console.log(pulgadasCentimetros(pulgadas, 1))
 
+
 /*-------------------------------------------------------------------------------*/
 
 
@@ -28,6 +29,7 @@
 
 // let url2 = (nombre) => "https://www." + nombre + ".com"
 // console.log(url2("pepito"))
+
 
 /*-------------------------------------------------------------------------------*/
 
@@ -294,10 +296,10 @@
 //         }
 //     let añadir = 0
 //         if (litrosConsumidos <= 25){
-//             console.log(añadir += 50)
+//             console.log(añadir = 50)
 //         }
 //         else{
-//             console.log(añadir += 25)
+//             console.log(añadir = 25)
 //         }
 //     let subTotal = precioLitro * litrosConsumidos
 // return subTotal + añadir
@@ -446,6 +448,9 @@
 // console.log(pedido(tipoSandwich, tipoPan, queso, tomate, lechuga, cebolla, mayonesa, mostaza))
 
 
+/*--------------------------------------------------------------------------*/
+
+
 // 18. ¿Cuál es el número secreto?
 // Creá una función que reciba un parámetro numérico y verifique si el mismo es el
 // número secreto. El número secreto deberá ser seleccionado de manera random de
@@ -563,16 +568,151 @@
 /*--------------------------------------------------------------------------*/
 
 
-// 22. Bucles y repeticiones
-// 1) Crear una función que pida un valor por parámetro y muestre los 10
+// Bucles y repeticiones
+
+// 22.Crear una función que pida un valor por parámetro y muestre los 10
 // números siguientes.
-// 2) Imprimir los números entre el 5 y el 20, saltando de tres en tres.
-// 3) Escribir un programa que muestre la sumatoria de todos los números
+
+// function numeroSiguiente (numero){
+//     for (let i = 0 ; i < 10 ; i ++){
+//         console.log(numero + i)
+//     }
+// }
+// numeroSiguiente(11)
+
+
+/*--------------------------------------------------------------------------*/
+
+
+// 23. Imprimir los números entre el 5 y el 20, saltando de tres en tres.
+
+// function tresEnTres (){
+//     for (let i = 5 ; i <= 20 ; i = i + 3){
+//         console.log(i)
+//     }
+// }
+// tresEnTres(5)
+
+
+/*--------------------------------------------------------------------------*/
+
+
+// 24. Escribir un programa que muestre la sumatoria de todos los números
 // entre el 0 y el 100
-// 4) Dado un número entero positivo, mostrar su factorial. El factorial de
+
+// function sumatoria (){
+//     let sumar = 0
+//     for (let i = 0 ; i <= 100 ; i ++){
+//         sumar = sumar + i
+//     }
+// return sumar
+// }
+// console.log(sumatoria())
+
+
+/*--------------------------------------------------------------------------*/
+
+
+// 25. Dado un número entero positivo, mostrar su factorial. El factorial de
 // un número se obtiene multiplicando todos los números enteros
 // positivos que hay entre el 1 y ese número.
-// 5) Crear una función que muestre todos los números de la secuencia de
-// fibonacci hasta el valor ingresado por parámetro.
+
+// function factorialize(num) {
+//     if (num < 0) 
+//         return -1;
+//     else if (num == 0) 
+//         return 1;
+//     else {
+//         return (num * factorialize(num - 1));
+//     }
+// }
+// console.log(factorialize(5))
+
+// function factorialize(num) {
+//     var result = num;
+//     if (num === 0 || num === 1) 
+//       return 1; 
+//     while (num > 1) { 
+//       num--;
+//       result *= num;
+//     }
+//     return result;
+//   }
+//   console.log(factorialize(5))
+
+
+/*-----------------------------------------------------------------------------*/
+
+// 26. Escribí un programa que le pida al usuario ingresar una frase y
+// la imprima en la consola.
+// Recordá que para pedirle al usuario que escriba una frase
+// debés utilizar el método prompt() y para escribir en la consola
+// debés utilizar el método console.log().
+
+// let IngresaUnaFrase = "Hola qué tal?"
+
+// function escribirUnaFrase(frase){
+//     return "hola, escribe una frase: " + frase
+// }
+// console.log(escribirUnaFrase(IngresaUnaFrase))
+
+
+/*----------------------------------------------------------------------------*/
+
+
+// 27. Escribí un programa que le pregunte al usuario su nombre e
+// imprima "Hola " seguido del nombre y un signo de
+// exclamación.
+// Por ejemplo, si el usuario ingresa "Pedro" el programa debe
+// imprimir en la consola "Hola Pedro!".
+
+// let nombre = "Fabian"
+
+// function saludar(nombre){
+//     return "Hola " + nombre + "!"
+// }
+// console.log(saludar(nombre))
+
+
+/*---------------------------------------------------------------------------*/
+
+
+// 28. Escribí un programa que le pida al usuario ingresar un número,
+// luego le pida un segundo número, e imprima en la consola la
+// suma de los dos números que ingresó el usuario.
+
+// let ingresaUnNumero = 100
+// let ingresaOtroNumero = 100
+
+// function dosNumeros (a, b){
+//     return a + b
+// }
+// console.log(dosNumeros(ingresaUnNumero,ingresaOtroNumero))
+
+
+/*-------------------------------------------------------------------------*/
+
+
+// 29. Escribí un programa que le pida al usuario su año de
+// nacimiento e imprima su edad actual en la consola con la frase
+// "Tienes X años" (siendo X la cantidad de años).
+// Por ejemplo, asumiendo que el año actual es 2019 y el usuario
+
+// ingresa 1999, el programa debe imprimir en la consola: “Tienes
+// 20 años”.
+
+// let AñoNacimiento = 1994
+
+// function Tienes(){
+//     let AñoActual = 2023
+//     let edad = AñoActual - AñoNacimiento
+//     return "Tienes " + edad + " años"
+// }
+// console.log(Tienes())
+
+
+/*------------------------------------------------------------------------*/
+
+
 
 
