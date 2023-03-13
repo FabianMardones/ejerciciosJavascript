@@ -716,3 +716,42 @@
 
 
 
+
+
+
+
+
+
+
+// 1) Crear una función que pida un valor por parámetro y muestre los 10
+// números siguientes.
+
+// function numeroSiguiente(numero){
+//     for (let i = 0 ; i < 10 ; i ++){
+//         console.log(numero + i)
+//     }
+// }
+// numeroSiguiente(1000)
+
+
+// // 2) Imprimir los números entre el 5 y el 20, saltando de tres en tres.
+
+// function tresEnTres(numero){
+//     for (let i = 0 ; i <= 15 ; i = i + 3){
+//         console.log(numero + i)
+//     }
+// }
+// tresEnTres(5)
+
+
+// 3) Escribir un programa que muestre la sumatoria de todos los números
+// entre el 0 y el 100
+
+// function sumatoria(a, b){
+//     let suma = 0
+//     for (let i = a ; i <= b ; i ++){
+//         suma = suma + i
+//     }
+// return suma
+// }
+// console.log(sumatoria(0,100))
