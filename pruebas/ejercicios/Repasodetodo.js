@@ -713,6 +713,97 @@
 
 /*------------------------------------------------------------------------*/
 
+// 30. Escribí un programa que piense un número de forma aleatoria
+// del 1 al 10 y le pida al usuario que lo trate de adivinar. Si el
+// número es correcto debe imprimir en la consola "Felicitaciones,
+// ese era!", de lo contrario, debe imprimir "Lo siento, intenta
+// nuevamente!"
+
+// function numeroSectro1(numero){
+//     Math.floor(Math.random()*1)
+//     if (numeroSectro1 = numero){
+//         return 'Felicitaciones, ese era!'
+//     }
+//     else{
+//         return 'Lo siento, intenta nuevamente'
+//     }
+// }
+// console.log(numeroSectro1(1))
+
+
+/*------------------------------------------------------------------------*/
+
+
+// 31) Escribí un programa que imprima los números pares del 0 al
+// 100.
+
+// function correlativos(n){
+//     for (let i = 0 ; i <= 100 ; i = i + 2)
+//     console.log(n + i)
+// }
+// correlativos(0)
+
+
+/*------------------------------------------------------------------------*/
+
+
+// 32. Construí un pseudocódigo que permita ingresar un número, si
+// el número es mayor de 500, se debe calcular y mostrar en
+// pantalla el 18% de este.
+
+// function pseudoCodigo(numero){
+//     if (numero > 500){
+//         return ((numero * 18)/100)
+//     }
+//     else{
+//         return numero*1
+//     }
+// }
+// console.log(pseudoCodigo(501))
+
+
+/*------------------------------------------------------------------------*/
+
+
+// 33. Escribí un programa que itere sobre el arreglo nombres e
+// imprima cada uno en la consola: const nombres = ["Pedro",
+// "Pablo", "Maria", "Juan", "Diana"];
+
+// 34. Escribí una función llamada elemento que recibe un arreglo
+// como parámetro. La función debe devolver el valor que se
+// encuentra en la tercera posición. Si el arreglo no tiene al menos
+// 3 elementos deberá retornar -1.
+
+// 35. Se ingresa por teclado un número natural de hasta 2 cifras, si
+// tiene una cifra que muestre lo mínimo que le falta para ser un
+// número de 2 cifras; de lo contrario, que muestre lo mínimo que
+// le falta para ser un número de 3 cifras. Considerar que el
+// usuario ingresa números de hasta dos cifras.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -755,3 +846,295 @@
 // return suma
 // }
 // console.log(sumatoria(0,100))
+
+
+
+
+
+
+
+
+
+// Desmenuzar Array
+
+
+// let pelisFavoritas = ['Star Wars', 'Kill Bill', 'Alien', 'Avatar'];
+// let pelisFavoritas2 = ['Star Wars', 'Kill Bill', 'Alien', 'Avatar', 'Iron Man'];
+
+
+// // console.log(pelisFavoritas.length)
+
+// // console.table(pelisFavoritas)
+
+// function mostrarPelis(pelis){
+//     for (let i = 0; i < pelis.length; i++) {
+//         console.log(pelis[i])
+        
+//     }
+//     console.log('Listando: ' + pelis.length + ' Pelis')
+// }
+
+// mostrarPelis(pelisFavoritas)
+// console.log()
+
+// mostrarPelis(pelisFavoritas2)
+
+
+// Desmenuzar String
+
+// let pelis = 'Avatar'
+// // console.log(pelis[0])
+
+// function deletrearPelis(pelis){
+//     console.log('Deletreando ' + pelis.length + ' Caracteres')
+//     for (let i = 0; i < pelis.length; i++) {
+//         console.log(pelis[i])
+//     }
+// }
+// deletrearPelis(pelis)
+
+
+/*--------------------------------------------------------------------------*/
+
+
+/*BONUS CLASE EN VIVO
+
+
+// Desarrollar una función que realice la verificación de cada elemento del array 
+// de correos pendientes. En caso de validar, agregar al arrayCorreosAdmitido.
+// caso contrario, agregar al arrayCorreosDescartados.
+
+            // console.log(correos[i])
+            // miTexto.indexOf(textoABuscar):
+
+
+
+
+
+// let arrayCorreosPendientes = [
+//     'ironman@digitalhouse.com', 'loki%digitalhouse.com', 'loki@digitalhouse.com', 
+//     'thanosdigitalhouse.com', 'thano@digitalhouse.com']
+
+//     let arrayCorreosAdmitidos = [
+//         'thor@digitalhouse.com',
+//         'tucuMan@digitalhouse.com',
+//         'wanda@digitalhouse.com'
+//     ]
+
+//     let arrayCorreosDescartados = []
+
+
+
+
+//     function verificarCorreos(correos){
+//         for (let i = 0; i < correos.length; i++) {
+//             if (correos[i].indexOf('@') != -1) {
+//                 arrayCorreosAdmitidos.push(correos[i])
+//             }
+//             else{
+//                 arrayCorreosDescartados.push(correos[i])
+//             }
+//         }
+//     }
+
+
+
+
+// console.log(arrayCorreosAdmitidos)
+// console.log('Verificando.....')
+// console.log()
+// verificarCorreos(arrayCorreosPendientes)
+
+
+// console.log("---correos admitidos; " + "cantidad " + arrayCorreosAdmitidos.length)
+// console.table(arrayCorreosAdmitidos)
+// console.log("---correos; " + "cantidad " + arrayCorreosDescartados.length)
+// console.table(arrayCorreosDescartados)
+
+
+
+/*------------------------------------------------------------------------*/
+
+/*Arrays y colecciones*/
+
+
+// let numbers =[22, 33, 54, 66, 72]
+// console.log(numbers[numbers.length])
+
+
+// let grupoDeAmigos = [ "Harry", "Ron", "Hermione", "Spiderman", "Hulk",
+// "Ironman","Penélope Glamour", "Pierre Nodoyuna","Patán" ]
+// console.log(grupoDeAmigos[5])
+
+
+// let str = "un string cualquiera"
+// let arrayAleatorio= ["Digital", "House", "true", "string", "123","false", "54", str ]
+// console.log(arrayAleatorio[arrayAleatorio.length - 1])
+
+
+/*------------------------------------------------------------------------*/
+
+// Arrays y colecciones
+
+
+// Colecciones de películas (y más...)
+
+// El tech leader del equipo necesita conocer la estructura de datos del nuevo proyecto.
+// Para esto, deberás:
+
+// 1. Crear la estructura adecuada para guardar las siguientes películas:
+// "star wars", "totoro", "rocky", "pulp fiction", "la vida es bella"
+// Importante: verificá que todo funciona correctamente accediendo a alguna de
+// las películas una vez creada la estructura correspondiente.
+
+// let peliculas = ["star wars", "totoro", "rocky", "pulp fiction", "la vida es bella"]
+
+// console.log(peliculas[2])
+
+// 2. Más tarde, de producción dieron el aviso de que las películas deberían estar todas
+// en mayúsculas. Para esto solicitan que crees una función que reciba por
+// parámetro un array y convierta el contenido de cada elemento a mayúsculas.
+// Pista: revisá qué hace el método de strings .toUpperCase().
+
+// function mayusculas(array){
+//     for (let i = 0; i < array.length; i++) {
+//         array[i] = array[i].toUpperCase()
+//     }
+//     return array
+// }
+// console.table(mayusculas(peliculas))
+// console.log()
+
+// 3. Mientras trabajabas en el feature anterior, se dio el aviso de que también hay que
+// crear otra estructura similar a la primera, pero con las siguientes películas
+// animadas:
+// "toy story", "finding Nemo", "kung-fu panda", "wally", "fortnite"
+// Por lo tanto, te piden crear una función que reciba dos arrays como parámetros,
+// para poder agregar los elementos contenidos en el segundo array dentro del
+// primero, y así retornar un solo array con todas las películas como sus elementos.
+// Importante: las películas animadas también deberían convertirse a mayúsculas.
+
+// let nuevasPeliculas = ["toy story", "finding Nemo", "kung-fu panda", "wally", "fortnite"]
+
+// let borrar = nuevasPeliculas.pop()
+
+// function agregar(arrayEntrada, arraySalida){
+//     for (let i = 0; i < arrayEntrada.length; i++) {
+//         arraySalida.push(arrayEntrada[i])
+//     }
+//     return arraySalida
+// }
+// let arraySalida = agregar(nuevasPeliculas, peliculas)
+
+// console.log("generando nueva tabla............")
+// console.log()
+// console.table(mayusculas(arraySalida))
+
+
+// 4. Durante el proceso, uno de los desarrolladores advierte que el último elemento del
+// array de películas animadas es un videojuego. Ahora tenés que editar el código y
+// modificarlo de manera que puedas eliminar ese último elemento antes de migrar el
+// contenido al array que contenga todas las películas.
+// PD: por precaución, guardá el elemento que vas a eliminar en una variable.
+
+
+
+
+// 5. Finalmente, te envían dos arrays con calificaciones que hacen distintos usuarios
+// del mundo sobre las películas con el siguiente formato:
+// const asiaScores = [8, 10, 6, 9, 10, 6, 6, 8, 4];
+// const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5];
+// Te piden crear una función que compare las calificaciones e indique si son iguales
+// o diferentes. Te confirman que están en el orden adecuado y que solo traen
+// valores numéricos del 1 al 10.
+// PD: los elementos de los scores tanto de Asia como de Europa corresponden en
+// orden al del array resultante de combinar películas con películas animadas. Es
+// decir, el primer elemento del array de películas general corresponde al primer
+// elemento de asiaScores y al primer elemento de euroScores, y así sucesivamente.
+
+
+// const asiaScores = [8, 10, 6, 9, 10, 6, 6, 8, 4];
+// const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5];
+
+// function compararCalificaciones(asiaScores, euroScores){
+//     for (let i = 0; i < euroScores.length; i++) {
+//         if (euroScores[i] == asiaScores[i]){
+//             console.log("Son Iguales")
+//         }
+//         else{
+//             console.log("Son Diferentes")
+//         }
+//     }
+// }
+// compararCalificaciones(asiaScores,euroScores)
+
+// Array inverso
+// En este ejercicio deberás crear una función que devuelva un array con sus elementos
+// invertidos, sin modificarlo. Luego, deberás hacer una función que lo modifique e invierta
+// el orden de sus elementos.
+
+
+// 1. Creá la función imprimirInverso que tome un array como argumento y que
+// imprima en la consola cada elemento en orden inverso (no tenés que invertir el
+// array).
+
+// 2. Creá la función inversor que tome un array como argumento y devuelva uno
+// nuevo invertido.
+
+
+
+// A - Nivel 1
+
+// 1 - Desarrollar una función que reciba 2 numeros y retorne la suma de ambos
+
+function dosNumeros(a, b){
+    return a + b
+}
+console.log(dosNumeros(5,10))
+
+
+// 2 - Desarrollar una función que reciba 2 numeros y 
+//      retorne la suma de ambos, si el primer parametro es mayor, 
+//      caso contrario retornar la resta.
+
+function sumaCondicional(a, b){
+    if (a > b){
+        return a + b
+    }
+    else {
+        return a - b
+    }
+}
+console.log(sumaCondicional(8,10))
+
+// 3 - Desarrollar una función que reciba 4 numeros y calcular la suma de total
+//      si el el resultado es mayor o igual a 7, retornar 'Aprobado', 
+//      caso contrario retornar 'otra chance '.
+
+
+function cuatroNumeros(a, b, c, d){
+    let suma = (a + b + c + d)/4
+    if(suma >= 7){
+        return "Aprobado"
+    }
+    else{
+        return "otra chance"
+    }
+}
+console.log(cuatroNumeros(7,7,7,7))
+
+
+// 4 - Desarrollar una función que reciba 4 numeros y calcular la suma de total
+//      si el el resultado es par, retornar la mitad del total,  
+//      caso contrario retornar el doble del total.
+
+function restultadoParoImpar(a, b, c, d){
+    let suma = a + b + c + d
+    if(suma % 2 == 0){
+        return suma / 2
+    }
+    else{
+        return suma * 2
+    }
+}
+console.log(restultadoParoImpar(7,8,9,11))
