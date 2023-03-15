@@ -987,14 +987,16 @@
 // Importante: verificá que todo funciona correctamente accediendo a alguna de
 // las películas una vez creada la estructura correspondiente.
 
-// let peliculas = ["star wars", "totoro", "rocky", "pulp fiction", "la vida es bella"]
 
-// console.log(peliculas[2])
+// let peliculas1 = ["star wars", "totoro", "rocky", "pulp fiction", "la vida es bella"]
+
+// console.log(peliculas1[0])
 
 // 2. Más tarde, de producción dieron el aviso de que las películas deberían estar todas
 // en mayúsculas. Para esto solicitan que crees una función que reciba por
 // parámetro un array y convierta el contenido de cada elemento a mayúsculas.
 // Pista: revisá qué hace el método de strings .toUpperCase().
+
 
 // function mayusculas(array){
 //     for (let i = 0; i < array.length; i++) {
@@ -1002,8 +1004,8 @@
 //     }
 //     return array
 // }
-// console.table(mayusculas(peliculas))
-// console.log()
+// console.table(mayusculas(peliculas1))
+
 
 // 3. Mientras trabajabas en el feature anterior, se dio el aviso de que también hay que
 // crear otra estructura similar a la primera, pero con las siguientes películas
@@ -1014,22 +1016,23 @@
 // primero, y así retornar un solo array con todas las películas como sus elementos.
 // Importante: las películas animadas también deberían convertirse a mayúsculas.
 
-// let nuevasPeliculas = ["toy story", "finding Nemo", "kung-fu panda", "wally", "fortnite"]
 
-// let borrar = nuevasPeliculas.pop()
+// let peliculas2 = ["toy story", "finding Nemo", "kung-fu panda", "wally", "fortnite"]
 
-// function agregar(arrayEntrada, arraySalida){
+
+// let borrar = peliculas2.pop()
+
+
+// function agregarPeliculas(arrayEntrada, arraySalida){
 //     for (let i = 0; i < arrayEntrada.length; i++) {
 //         arraySalida.push(arrayEntrada[i])
 //     }
 //     return arraySalida
 // }
-// let arraySalida = agregar(nuevasPeliculas, peliculas)
+// console.table(agregarPeliculas(peliculas2, peliculas1))
 
-// console.log("generando nueva tabla............")
-// console.log()
-// console.table(mayusculas(arraySalida))
-
+// let peliculas = agregarPeliculas(peliculas2, peliculas1)
+// console.table(mayusculas(peliculas))
 
 // 4. Durante el proceso, uno de los desarrolladores advierte que el último elemento del
 // array de películas animadas es un videojuego. Ahora tenés que editar el código y
@@ -1040,10 +1043,13 @@
 
 
 
+
 // 5. Finalmente, te envían dos arrays con calificaciones que hacen distintos usuarios
 // del mundo sobre las películas con el siguiente formato:
+
 // const asiaScores = [8, 10, 6, 9, 10, 6, 6, 8, 4];
 // const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5];
+
 // Te piden crear una función que compare las calificaciones e indique si son iguales
 // o diferentes. Te confirman que están en el orden adecuado y que solo traen
 // valores numéricos del 1 al 10.
@@ -1053,20 +1059,19 @@
 // elemento de asiaScores y al primer elemento de euroScores, y así sucesivamente.
 
 
-// const asiaScores = [8, 10, 6, 9, 10, 6, 6, 8, 4];
-// const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5];
-
-// function compararCalificaciones(asiaScores, euroScores){
-//     for (let i = 0; i < euroScores.length; i++) {
-//         if (euroScores[i] == asiaScores[i]){
-//             console.log("Son Iguales")
+// function calidifaciones(asiaScores, euroScores){
+//     for (let i = 0; i < asiaScores.length; i++) {
+//         if(asiaScores[i] == euroScores [i]){
+//             console.log ("Son Iguales")
 //         }
 //         else{
-//             console.log("Son Diferentes")
+//             console.log("Son diferentes")
 //         }
 //     }
 // }
-// compararCalificaciones(asiaScores,euroScores)
+// calidifaciones(asiaScores, euroScores)
+
+
 
 // Array inverso
 // En este ejercicio deberás crear una función que devuelva un array con sus elementos
@@ -1087,54 +1092,402 @@
 
 // 1 - Desarrollar una función que reciba 2 numeros y retorne la suma de ambos
 
-function dosNumeros(a, b){
-    return a + b
-}
-console.log(dosNumeros(5,10))
+
+// function suma(a, b){
+//     return a + b
+// }
+// console.log(suma(5,7))
 
 
 // 2 - Desarrollar una función que reciba 2 numeros y 
 //      retorne la suma de ambos, si el primer parametro es mayor, 
 //      caso contrario retornar la resta.
 
-function sumaCondicional(a, b){
-    if (a > b){
-        return a + b
-    }
-    else {
-        return a - b
-    }
-}
-console.log(sumaCondicional(8,10))
+
+// let sumaCondicional = (a, b) => a > b ? a + b : a - b;
+// console.log(sumaCondicional(10,15))
+
 
 // 3 - Desarrollar una función que reciba 4 numeros y calcular la suma de total
 //      si el el resultado es mayor o igual a 7, retornar 'Aprobado', 
 //      caso contrario retornar 'otra chance '.
 
 
-function cuatroNumeros(a, b, c, d){
-    let suma = (a + b + c + d)/4
-    if(suma >= 7){
-        return "Aprobado"
-    }
-    else{
-        return "otra chance"
-    }
-}
-console.log(cuatroNumeros(7,7,7,7))
+// function promedio(a, b, c, d){
+//     let sumar = (a + b + c + d)/4
+//     if(sumar >= 7){
+//         return "APROBADO!!!!! :D"
+//     }
+//     else{
+//         return "Otra Chance D:"
+//     }
+// }
+// console.log(promedio(7,8,9,10))
+
 
 
 // 4 - Desarrollar una función que reciba 4 numeros y calcular la suma de total
 //      si el el resultado es par, retornar la mitad del total,  
 //      caso contrario retornar el doble del total.
 
-function restultadoParoImpar(a, b, c, d){
-    let suma = a + b + c + d
-    if(suma % 2 == 0){
-        return suma / 2
+// function retornoCondicional(a, b, c, d){
+//     let sumar4Numeros = a + b + c + d
+//     if(sumar4Numeros % 2 === 0){
+//         return sumar4Numeros/2
+//     }
+//     else{
+//         return sumar4Numeros*2
+//     }
+// }
+// console.log(retornoCondicional(1,2,3,5))
+
+// B  Nivel 2
+// - Declarar 3 arrays de edades por ejemplo -> [10, 9, 8, 22, 55, 80, 5, 63, 29, 9] , luego desarrollar las siguientes funciones:
+
+// 1 - Funcion que reciba un array de edades y retorne el promedio
+
+
+let age0 = [10, 9, 8, 22, 55, 80, 5, 130, 29, 9,100, 120, 63]
+let age1 = [1, 19, 18, 42, 55, 80, 5, 63, 29, 9, 50, 70, 80]
+let age2 = [14, 14, 3, 4, 5, 14, 7, 8, 9, 10, 11, 12, 14]
+
+
+// function ageAverage(arrayAge){
+//     let plus = 0
+//     for (let i = 0; i < arrayAge.length; i++){
+//         plus = plus + arrayAge[i]
+//     }
+//     return plus / arrayAge.length
+// }
+
+// console.log("PROCESSING RESULTS..........")
+// console.log()
+// console.log("THREE NEW ARRAYS FOUNDS")
+// console.log()
+// console.log("SHOWING RESULTS AS FOLOWWING =>")
+// console.log()
+// console.log("THE AGE0 AVERAGE IS:")
+// console.log(ageAverage(age0))
+// console.log()
+// console.log("THE AGE1 AVERAGE IS:")
+// console.log(ageAverage(age1))
+// console.log()
+// console.log("THE AGE2 AVERAGE IS:")
+// console.log(ageAverage(age2))
+// console.log()
+// console.log("-----------------------------")
+
+// 2 - Funcion que reciba un array de edades y retorne el mayor elemento // 80
+
+
+// function majorAge(arrayAge){
+//     let major = arrayAge[0]
+//     for (let i = 0; i < arrayAge.length; i++) {
+//         let age = arrayAge[i]
+//         if (age > major)
+//             major = age
+//     }
+//     return major
+// }
+// console.log()
+// console.log("PROCESSING RESULTS..........")
+// console.log()
+// console.log("THREE NEW ARRAY FOUND")
+// console.log()
+// console.log("SHOWING RESULT AS FOLOWWING =>")
+// console.log()
+// console.log("THE MAJOR AGE0 IS:")
+// console.log(majorAge(age0))
+// console.log()
+// console.log("THE MAJOR AGE1 IS:")
+// console.log(majorAge(age1))
+// console.log()
+// console.log("THE MAJOR AGE2 IS:")
+// console.log(majorAge(age2))
+
+
+
+// 3 - Funcion que reciba un array de edades y retorne el menor elemento // 5
+
+
+// function lowerAge(arrayAge){
+//     let lower = arrayAge[0]
+//     for (let i = 0; i < arrayAge.length; i++) { 
+//         let age = arrayAge[i]
+//         if (age < lower)
+//             lower = age
+//     }
+//     return lower
+// }
+// console.log()
+// console.log("PROCESSING RESULTS..........")
+// console.log()
+// console.log("THREE NEW ARRAY FOUND")
+// console.log()
+// console.log("SHOWING RESULT AS FOLOWWING =>")
+// console.log()
+// console.log("THE LOWER AGE0 IS:")
+// console.log(lowerAge(age0))
+// console.log()
+// console.log("THE LOWER AGE1 IS:")
+// console.log(lowerAge(age1))
+// console.log()
+// console.log("THE LOWER AGE2 IS:")
+// console.log(lowerAge(age2))
+// console.log()
+
+
+
+// 4 - Funcion que reciba un array de edades y retorne true si encuentra algun elemento repetido o false caso contrario
+
+// function numberRepeat(arrayAge){
+//     let lookingFor = arrayAge[0]
+//     for (let i = 0; i < arrayAge.length; i++) {
+//         let age = arrayAge[i]
+//         if(lookingFor !== age){
+//             console.log(false)
+//         }
+//         else {
+//             console.log(true)
+//         }
+//     }
+// }
+// numberRepeat(age2)
+
+
+// 5 - Funcion que reciba un array de edades y una edada buscar, retorne el primer índice 
+// si encuentra coincidencia o null caso contrario
+
+
+// function coincidencia(arrayEdad, edadBuscar){
+//     for (let i = 0; i < arrayEdad.length; i++) {
+//         let rango = arrayEdad[i]
+//         if(edadBuscar === rango){
+//             return i
+//         }
+//         else{
+//             return "null"
+//         }
+//     }
+// }
+// console.log(coincidencia(age2,14))
+
+
+// 6 - Funcion que reciba un array de edades y retorne un objeto literal 
+// con dos propiedades que contengan un array
+//    {
+//       edadesMenor : "// edades menor a 18",  
+//       edadesMayor : "// edades menor a 18"
+//    }
+
+
+// C  Nivel 3
+
+// 1 - Desarrollar un objeto literal que contenga 5 propiedades que sean del siguiente tipo:
+//    - 2 String   
+//    - 1 Boolean
+//    - 1 Number
+//    - 1 Array
+//    - 1 Metodo que retorne un saludito
+//     * por ejemplo:
+    
+let misDatos = 
+    {
+    nombre : 'Fabian',
+    color  : 'Negro',
+    Chileno : true,
+    edad : 28,
+    comunasQueHaVivido : ['Quinta Normal', 'la Pintana', 'Puente Alto', 'San Bernardo'],
+    saludo: function(){
+        return 'wouf wouf wouf..'
+    } 
     }
-    else{
-        return suma * 2
+//   - Luego desarrollar una funcion que liste individualmente los elementos de la propiedad del tipo Array 
+
+function listar (elementos){
+    for (let i = 0; i < misDatos.comunasQueHaVivido.length; i++) {
+        console.log(misDatos.comunasQueHaVivido[i])
     }
 }
-console.log(restultadoParoImpar(7,8,9,11))
+listar(misDatos)
+
+// 2 - Dado el Siguiente array de personas desarrollar funciones:
+//   - Funcion que reciba el array de personas y liste el nombre de cada una. 
+//   - Funcion que reciba el array de personas y retorne en un array los que son programadores.
+//   - Funcion que reciba el array de personas y un id a buscar, 
+//        retorne la persona en caso de encontrar, 
+//        caso contrario retorne null
+//   - Funcion que reciba el array de personas y un id a buscar, 
+//        retorne la persona en caso de encontrar, 
+//        caso contrario retorne null 
+
+
+
+    // {
+    //   "id": 0,
+    //   "isProgrammer": true,
+    //   "age": 28,
+    //   "name": "Harrington Curry",
+    //   "company": "TRANSLINK",
+    //   "favoriteFruit": "strawberry"
+    // },
+    // {
+    //   "id": 1,
+    //   "isProgrammer": false,
+    //   "age": 38,
+    //   "name": "Greta Morton",
+    //   "company": "PYRAMI",
+    //   "favoriteFruit": "apple"
+    // },
+    // {
+    //   "id": 2,
+    //   "isProgrammer": false,
+    //   "age": 32,
+    //   "name": "Hester Bowen",
+    //   "company": "TURNABOUT",
+    //   "favoriteFruit": "apple"
+    // },
+    // {
+    //   "id": 3,
+    //   "isProgrammer": false,
+    //   "age": 25,
+    //   "name": "Melendez Mcfarland",
+    //   "company": "XSPORTS",
+    //   "favoriteFruit": "strawberry"
+    // },
+
+
+/*-------------------------------------------------------------------------------*/
+
+
+
+// Objetos literales
+
+
+
+// const jugador = {
+//     nombre : 'Roger',
+//     apellido : 'Federer',
+//     edad : 38,
+//     estaJugando : true,
+//     saludar : function(tiempo){
+//         return 'Hola soy ' + this.nombre + ' buenas ' + tiempo
+//     }
+// }
+// console.log(jugador.saludar('noches'))
+
+
+// let dominio = "digitalhouse.com.ar"
+
+// function url (dominio){
+//     return "https://www." + dominio
+// }
+// console.log(url(dominio))
+
+
+
+//la lista de clientes.
+
+let arrayCuentas = [
+    {
+        nroCuenta: 5486273622,
+        tipoDeCuenta: "Cuenta Corriente",
+        saldoEnPesos: 27771,
+        titularCuenta: "Abigael Natte",
+    },
+    {
+        nroCuenta: 1183971869,
+        tipoDeCuenta: "Caja de Ahorro",
+        saldoEnPesos: 8675,
+        titularCuenta: "Ramon Connell",
+    },
+    {
+        nroCuenta: 9582019689,
+        tipoDeCuenta: "Caja de Ahorro",
+        saldoEnPesos: 27363,
+        titularCuenta: "Jarret Lafuente",
+    },
+    {
+        nroCuenta: 1761924656,
+        tipoDeCuenta: "Cuenta Corriente",
+        saldoEnPesos: 32415,
+        titularCuenta: "Ansel Ardley",
+    },
+    {
+        nroCuenta: 7401971607,
+        tipoDeCuenta: "Cuenta Unica",
+        saldoEnPesos: 18789,
+        titularCuenta: "Jacki Shurmer",
+    },
+    ];
+// console.table(arrayCuentas)
+// 
+// podes continuar tu codigo a partir de aca!
+
+// 2. Nos solicitan también crear un objeto literal llamado “banco”, el cual tendrá una
+// propiedad llamada “clientes” que estará compuesta de la lista de objetos
+// obtenidos en el punto anterior.
+
+// 3. Al objeto “banco”, crearle un método llamado consultarCliente, el cual recibirá un
+// nombre (titular) por parámetro, deberá buscarlo en la lista de clientes y retornar el
+// objeto cliente que corresponda con ese nombre ingresado.
+// Ayuda: let clienteEncontrado = banco.consultarCliente(“Ramon Connell”);
+
+// 4. Crear otro método llamado depósito que recibirá dos parámetros: el titular de
+// cuenta y una cantidad de dinero a depositar. El método debe obtener la cuenta
+// correspondiente y luego sumar la cantidad de dinero a depositar a saldo en pesos.
+// Luego, deberá dar un aviso por la consola con el mensaje “Depósito realizado, su
+// nuevo saldo es: XXXX”.
+
+// 5. Crear un último método llamado extracción que recibirá también dos parámetros:
+// el titular de cuenta y el monto a extraer. El método debe obtener la cuenta
+// correspondiente y restar el monto al saldo actual. En caso de que el resultado sea
+// menor a 0, deberá imprimir un mensaje por la consola de “Fondos insuficientes”.
+// De lo contrario, deberá imprimir “Extracción realizada correctamente, su nuevo
+// saldo es: XXXX”.
+
+
+const banco = {
+    clientes : arrayCuentas,
+
+    consultarCliente : function(titular){
+        for (let i = 0; i < this.clientes.length; i++) {
+            if(this.clientes[i].titularCuenta === titular){
+                return this.clientes[i]
+            }
+        }
+    },
+    deposito : function(titular,cantidadDeposito){
+        for (let i = 0; i < this.clientes.length; i++) {
+            let cuenta = this.clientes[i].nroCuenta
+            let monto = this.clientes[i].saldoEnPesos + cantidadDeposito
+            if(this.clientes[i].titularCuenta === titular){
+                return "Depósito realizado a su cuenta N°" + cuenta + "su nuevo saldo es: " + monto
+            }
+            else{
+                return "Cliente o monto no válido"
+            }
+        }
+    },
+    extraccion : function(titular, montoAExtraer){
+        for (let i = 0; i < this.clientes.length; i++) {
+            let monto = this.clientes[i].saldoEnPesos - montoAExtraer
+            if(this.clientes[i].titularCuenta === titular && this.clientes[i].saldoEnPesos > montoAExtraer){
+                return "Extracción realizada correctamente, su nuevo saldo es: " + monto
+            }
+            else{
+                return "Fondos insuficientes"
+            }
+        }   
+    }
+}
+
+
+
+// console.log(banco.consultarCliente('Abigael Natte'))
+// console.log(banco.extraccion('Abigael Natte', 25000))
+// console.log(banco.deposito('Ramon Connell', 2000))
+// console.log(banco.deposito('Jarret Lafuente', 2000))
+// console.log(banco.deposito('Ansel Ardley', 2000))
+// console.log(banco.deposito('Jacki Shurmer', 2000))
+
