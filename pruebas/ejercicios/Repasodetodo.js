@@ -1281,6 +1281,22 @@ let age2 = [14, 14, 3, 4, 5, 14, 7, 8, 9, 10, 11, 12, 14]
 //    }
 
 
+// function edadesMM(arrayEdades){
+//     let edadesMenor = []
+//     let edadesMayor = []
+//     for (let i = 0; i < arrayEdades.length; i++) {
+//         if(arrayEdades[i] < 18){
+//             edadesMenor.push(arrayEdades[i])
+//         }
+//         else{
+//             edadesMayor.push(arrayEdades[i])
+//         }
+//     }
+//     return {edadesMenor, edadesMayor}
+// }
+// console.table(edadesMM(age0))
+
+
 // C  Nivel 3
 
 // 1 - Desarrollar un objeto literal que contenga 5 propiedades que sean del siguiente tipo:
@@ -1291,25 +1307,25 @@ let age2 = [14, 14, 3, 4, 5, 14, 7, 8, 9, 10, 11, 12, 14]
 //    - 1 Metodo que retorne un saludito
 //     * por ejemplo:
     
-let misDatos = 
-    {
-    nombre : 'Fabian',
-    color  : 'Negro',
-    Chileno : true,
-    edad : 28,
-    comunasQueHaVivido : ['Quinta Normal', 'la Pintana', 'Puente Alto', 'San Bernardo'],
-    saludo: function(){
-        return 'wouf wouf wouf..'
-    } 
-    }
-//   - Luego desarrollar una funcion que liste individualmente los elementos de la propiedad del tipo Array 
+// let misDatos = 
+//     {
+//     nombre : 'Fabian',
+//     color  : 'Negro',
+//     Chileno : true,
+//     edad : 28,
+//     comunasQueHaVivido : ['Quinta Normal', 'la Pintana', 'Puente Alto', 'San Bernardo'],
+//     saludo: function(){
+//         return 'wouf wouf wouf..'
+//     } 
+//     }
+// //   - Luego desarrollar una funcion que liste individualmente los elementos de la propiedad del tipo Array 
 
-function listar (elementos){
-    for (let i = 0; i < misDatos.comunasQueHaVivido.length; i++) {
-        console.log(misDatos.comunasQueHaVivido[i])
-    }
-}
-listar(misDatos)
+// function listar (elementos){
+//     for (let i = 0; i < misDatos.comunasQueHaVivido.length; i++) {
+//         console.log(misDatos.comunasQueHaVivido[i])
+//     }
+// }
+// listar(misDatos)
 
 // 2 - Dado el Siguiente array de personas desarrollar funciones:
 //   - Funcion que reciba el array de personas y liste el nombre de cada una. 
@@ -1388,38 +1404,48 @@ listar(misDatos)
 
 //la lista de clientes.
 
-let arrayCuentas = [
-    {
-        nroCuenta: 5486273622,
-        tipoDeCuenta: "Cuenta Corriente",
-        saldoEnPesos: 27771,
-        titularCuenta: "Abigael Natte",
-    },
-    {
-        nroCuenta: 1183971869,
-        tipoDeCuenta: "Caja de Ahorro",
-        saldoEnPesos: 8675,
-        titularCuenta: "Ramon Connell",
-    },
-    {
-        nroCuenta: 9582019689,
-        tipoDeCuenta: "Caja de Ahorro",
-        saldoEnPesos: 27363,
-        titularCuenta: "Jarret Lafuente",
-    },
-    {
-        nroCuenta: 1761924656,
-        tipoDeCuenta: "Cuenta Corriente",
-        saldoEnPesos: 32415,
-        titularCuenta: "Ansel Ardley",
-    },
-    {
-        nroCuenta: 7401971607,
-        tipoDeCuenta: "Cuenta Unica",
-        saldoEnPesos: 18789,
-        titularCuenta: "Jacki Shurmer",
-    },
-    ];
+// let arrayCuentas = [
+//     {
+//         nroCuenta: 5486273622,
+//         tipoDeCuenta: "Cuenta Corriente",
+//         saldoEnPesos: 27771,
+//         titularCuenta: "Abigael Natte",
+//     },
+//     {
+//         nroCuenta: 1183971869,
+//         tipoDeCuenta: "Caja de Ahorro",
+//         saldoEnPesos: 8675,
+//         titularCuenta: "Ramon Connell",
+//     },
+//     {
+//         nroCuenta: 9582019689,
+//         tipoDeCuenta: "Caja de Ahorro",
+//         saldoEnPesos: 27363,
+//         titularCuenta: "Jarret Lafuente",
+//     },
+//     {
+//         nroCuenta: 1761924656,
+//         tipoDeCuenta: "Cuenta Corriente",
+//         saldoEnPesos: 32415,
+//         titularCuenta: "Ansel Ardley",
+//     },
+//     {
+//         nroCuenta: 7401971607,
+//         tipoDeCuenta: "Cuenta Unica",
+//         saldoEnPesos: 18789,
+//         titularCuenta: "Jacki Shurmer",
+//     },
+//     ];
+
+    // function agregarID(array){
+    //     for (let i = 0; i < array.length; i++) {
+    //         array[i].RUT = "xx.xxx.xxx-x"
+    //     }
+    //     return array
+    // }
+    // console.table(agregarID(arrayCuentas))
+
+
 // console.table(arrayCuentas)
 // 
 // podes continuar tu codigo a partir de aca!
@@ -1447,42 +1473,40 @@ let arrayCuentas = [
 // saldo es: XXXX”.
 
 
-const banco = {
-    clientes : arrayCuentas,
+// const banco = {
+//     clientes : arrayCuentas,
 
-    consultarCliente : function(titular){
-        for (let i = 0; i < this.clientes.length; i++) {
-            if(this.clientes[i].titularCuenta === titular){
-                return this.clientes[i]
-            }
-        }
-    },
-    deposito : function(titular,cantidadDeposito){
-        for (let i = 0; i < this.clientes.length; i++) {
-            let cuenta = this.clientes[i].nroCuenta
-            let monto = this.clientes[i].saldoEnPesos + cantidadDeposito
-            if(this.clientes[i].titularCuenta === titular){
-                return "Depósito realizado a su cuenta N°" + cuenta + "su nuevo saldo es: " + monto
-            }
-            else{
-                return "Cliente o monto no válido"
-            }
-        }
-    },
-    extraccion : function(titular, montoAExtraer){
-        for (let i = 0; i < this.clientes.length; i++) {
-            let monto = this.clientes[i].saldoEnPesos - montoAExtraer
-            if(this.clientes[i].titularCuenta === titular && this.clientes[i].saldoEnPesos > montoAExtraer){
-                return "Extracción realizada correctamente, su nuevo saldo es: " + monto
-            }
-            else{
-                return "Fondos insuficientes"
-            }
-        }   
-    }
-}
-
-
+//     consultarCliente : function(titular){
+//         for (let i = 0; i < this.clientes.length; i++) {
+//             if(this.clientes[i].titularCuenta === titular){
+//                 return this.clientes[i]
+//             }
+//         }
+//     },
+//     deposito : function(titular,cantidadDeposito){
+//         for (let i = 0; i < this.clientes.length; i++) {
+//             let cuenta = this.clientes[i].nroCuenta
+//             let monto = this.clientes[i].saldoEnPesos + cantidadDeposito
+//             if(this.clientes[i].titularCuenta === titular){
+//                 return "Depósito realizado a su cuenta N°" + cuenta + "su nuevo saldo es: " + monto
+//             }
+//             else{
+//                 return "Cliente o monto no válido"
+//             }
+//         }
+//     },
+//     extraccion : function(titular, montoAExtraer){
+//         for (let i = 0; i < this.clientes.length; i++) {
+//             let monto = this.clientes[i].saldoEnPesos - montoAExtraer
+//             if(this.clientes[i].titularCuenta === titular && this.clientes[i].saldoEnPesos > montoAExtraer){
+//                 return "Extracción realizada correctamente, su nuevo saldo es: " + monto
+//             }
+//             else{
+//                 return "Fondos insuficientes"
+//             }
+//         }   
+//     },
+// }
 
 // console.log(banco.consultarCliente('Abigael Natte'))
 // console.log(banco.extraccion('Abigael Natte', 25000))
@@ -1491,3 +1515,111 @@ const banco = {
 // console.log(banco.deposito('Ansel Ardley', 2000))
 // console.log(banco.deposito('Jacki Shurmer', 2000))
 
+
+
+
+// Integración de contenido:
+// 1) Crear un array llamado misMascotas
+
+// 2) Dentro de este array crearemos un objeto literal para cada mascota. Cada objeto
+// deberá tener:
+// ● nombre
+// ● raza
+// ● edad
+// ● sonido
+// ● un método que nos retorne ese sonido 2 veces
+// Cuando esté listo, verificar en consola
+
+
+
+// const misMascotas = [
+//     {
+//         nombre: "Tom",
+//         raza: "Dogo Argentino",
+//         edad: 12,
+//         sonido: "Roof Roof Roof"
+//     },
+//     {
+//         nombre: "Kai",
+//         raza: "Boxer",
+//         edad: 6,
+//         sonido: "es como una Tetera"
+//     },
+//     {
+//         nombre: "chiquita",
+//         raza: "Pincher",
+//         edad: 5,
+//         sonido: "rrr rrr rrr"
+//     },
+//     {
+//         nombre: "chocolo",
+//         raza: "kiltro",
+//         edad: 9,
+//         sonido: "wuau"
+//     },
+//     {
+//         nombre: "Molly",
+//         raza: "Quiltro",
+//         edad: 2,
+//         sonido: "Guau"
+//     },
+//     {
+//         nombre: 'Rugui',
+//         raza: 'Shar Pei',
+//         edad: 5,
+//         sonido: 'woof'
+//     },
+//     {   
+//         nombre: "Ahsoka", 
+//         raza: "gato", 
+//         edad: 2, 
+//         sonido: "Miau"
+//     }
+// ]
+// console.table(misMascotas)
+
+// 3) Deberemos crear una función que se llame aumentarEdad que aumente la edad de
+// cada animal en 1.
+
+// function aumentarEdad(arrayMascotas){
+//     for (let i = 0; i < arrayMascotas.length; i++) {
+//         arrayMascotas[i].edad = arrayMascotas[i].edad + 1
+//     }
+// }
+// aumentarEdad(misMascotas)
+// console.table(misMascotas)
+
+
+// 4) Ahora debemos crear otra función, que se llame aumentarEdad2, que va a hacer un
+// trabajo más fino:
+// ● Si la mascota tiene menos de 6 años, debe aumentar su edad en 1
+// ● Si la mascota tiene entre 6 y 10 años, debe aumentar su edad en 2
+// ● Si la mascota tiene más de 10 años, deberá sumarle la mitad de su edad
+
+
+// function aumentarEdad2(arrayMascotas){
+//     for (let i = 0; i < arrayMascotas.length; i++) {
+//         if(arrayMascotas[i].edad < 6){
+//             arrayMascotas[i].edad = arrayMascotas[i].edad + 1
+//         }
+//         else if (arrayMascotas[i].edad<= 10){
+//             arrayMascotas[i].edad = arrayMascotas[i].edad + 2
+//         }
+//         else {
+//             arrayMascotas[i].edad = arrayMascotas[i].edad * 1.5
+//         }
+//     }
+// }
+// aumentarEdad2(misMascotas)
+// console.table(misMascotas)
+
+// 5) Ahora crearemos una función que va a generar un identificador (ID) en cada objeto,
+// que será secuencial y que empezará en 1.
+
+// function generarIdentificador(array){
+//     for (let i = 0; i < array.length; i++) {
+//         array[i].Id = i + 1
+//     }
+//     return array
+// }
+// console.table(generarIdentificador(misMascotas))
