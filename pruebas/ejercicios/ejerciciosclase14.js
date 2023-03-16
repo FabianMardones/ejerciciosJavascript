@@ -94,3 +94,12 @@ function incrementar(arrayEdades){
 }
 incrementar(edades)
 console.log(edades)
+
+
+
+
+for (let i = 10; i > 0; i = i - 2){
+    for(let j = 5; j > 3; j = j - 1){
+        console.log(i + " dividio por " + j + " es igual a " + i/j)
+    }
+}
