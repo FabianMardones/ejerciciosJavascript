@@ -143,47 +143,127 @@ const arrayCuentas =[
     saldo: 1616.52,
     edadTitular: 34,
     tipoCuenta: "sueldo"
-  },
-  {
+    },
+    {
     titular: "Harding Mitchell",
     estaHabilitada: true,
     saldo: 1408.68,
     edadTitular: 25,
     tipoCuenta: "corriente"
-  }
+    }
 ]
 
 // Obtener un nuevo array de cuentas cuyas edades sean menores a 30.
 
-function menoresCuentas(array){
-    let menoresA30 = []
-    for (let i = 0; i < array.length; i++) {
-        if(array[i].edadTitular <= 30){
-            menoresA30.push(array[i])
+
+function edadMenoresA(arrayCuentas){
+    let menoresA30= []
+    for (let i = 0; i < arrayCuentas.length; i++) {
+        if(arrayCuentas[i].edadTitular < 30){
+            menoresA30.push(arrayCuentas[i])
         }
     }
-    return menoresA30
+//     return menoresA30
 }
-console.log(menoresCuentas(arrayCuentas))
-
+console.table(edadMenoresA(arrayCuentas))
 
 // Obtener un nuevo array de cuentas cuyas edades sean mayor o igual a 30.
-// Obtener un nuevo array de cuentas cuyas edades sean menores o igual a 30.
-// Obtener la cuenta con el titular de la misma más joven.
-// Obtener un array con las cuentas habilitadas.
 
-function cuentasHabilitadas(arrayCuentas){
-    let cuentasHa = []
+function edadMOI(arrayCuentas){
+    let edadmenorOIgual = []
     for (let i = 0; i < arrayCuentas.length; i++) {
-        if(arrayCuentas[i].estaHabilitada === true){
-            cuentasHa.push(arrayCuentas[i])
+        if(arrayCuentas[i].edadTitular >= 30){
+            edadmenorOIgual.push(arrayCuentas[i])
         }
     }
-    return cuentasHa
+//     return edadmenorOIgual
+}
+console.table(edadMOI(arrayCuentas))
+
+// Obtener un nuevo array de cuentas cuyas edades sean menores o igual a 30.
+
+function edadmenorOIgual(arrayCuentas){
+    let edad = []
+    for (let i = 0; i < arrayCuentas.length; i++) {
+        if(arrayCuentas[i].edadTitular <= 30){
+            edad.push(arrayCuentas[i])
+        }
+    }
+    return edad
+}
+console.table(edadmenorOIgual(arrayCuentas))
+
+// Obtener la cuenta con el titular de la misma más joven.
+
+function titularMasJoven(arrayCuentas){
+    let inicio = arrayCuentas[0].edadTitular
+    let clienteJoven = []
+    for (let i = 0; i < arrayCuentas.length; i++) {
+        if(inicio > arrayCuentas[i].edadTitular){
+            clienteJoven = arrayCuentas[i]
+        }
+    }
+    return clienteJoven
+}
+console.table(titularMasJoven(arrayCuentas))
+
+// Obtener un array con las cuentas habilitadas.
+
+
+function cuentasHabilitadas(arrayCuentas){
+    let cuentasHab = []
+    for (let i = 0; i < arrayCuentas.length; i++) {
+        if(arrayCuentas[i].estaHabilitada !== false){
+            cuentasHab.push(arrayCuentas[i])
+        }
+    }
+    return cuentasHab
 }
 console.table(cuentasHabilitadas(arrayCuentas))
+
+
 // Obtener un array con las cuentas deshabilitadas.
+
+function cuentasDeshabilitadas(arrayCuentas){
+    let cuentasDes = []
+    for (let i = 0; i < arrayCuentas.length; i++) {
+        if(arrayCuentas[i].estaHabilitada !== true){
+            cuentasDes.push(arrayCuentas[i])
+        }
+    }
+    return cuentasDes
+}
+console.table(cuentasDeshabilitadas(arrayCuentas))
+
+
 // Obtener la cuenta con el menor saldo.
+
+function menorSaldo(arrayCuentas){
+    let inicio = arrayCuentas[0].saldo
+    let menorSaldoDisponible = []
+    for (let i = 0; i < arrayCuentas.length; i++) {
+        if(inicio > arrayCuentas[i].saldo){
+            inicio = arrayCuentas[i].saldo
+            menorSaldoDisponible = arrayCuentas[i]
+        }
+    }
+    return menorSaldoDisponible
+}
+console.table(menorSaldo(arrayCuentas))
+
+
 // Obtener la cuenta con el mayor saldo.
 
+
+function mayorSaldo(arrayCuentas){
+    let inicio = arrayCuentas[0].saldo
+    let mayorSaldoDisponible = []
+    for (let i = 0; i < arrayCuentas.length; i++) {
+        if(inicio < arrayCuentas[i].saldo){
+            mayorSaldoDisponible = arrayCuentas[i]
+        }
+    }
+    return mayorSaldoDisponible
+}
+console.table(mayorSaldo(arrayCuentas))
 
