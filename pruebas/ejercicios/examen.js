@@ -30,19 +30,18 @@ numeros.filter( function(num) {
 })
 
 function filtrarNumeros(array, string){
-    let par = []
-    let impar = []
+    let newarray = []
     for (let i = 0; i < array.length; i++) {
         if(array[i] % 2 == 0 && string == "par"){
-            par.push(array[i])
+            newarray.push(array[i])
         }
         else if(array[i] % 2 !== 0 && string == "impar"){
-            impar.push(array[i])
+            newarray.push(array[i])
         }
     }
-    return par + impar
+    return newarray
 }
-console.log(filtrarNumeros(numeros, "par"))
+console.log(filtrarNumeros(numeros, "impar"))
 
 
 
